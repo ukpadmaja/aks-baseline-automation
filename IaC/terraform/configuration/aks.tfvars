@@ -65,7 +65,7 @@ aks_clusters = {
 
     default_node_pool = {
       name                  = "sharedsvc"
-      vm_size               = "Standard_B2s"
+      vm_size               = "Standard_DS3_v2"
       subnet_key            = "aks_nodepool_system"
       enabled_auto_scaling  = false
       enable_node_public_ip = false
@@ -87,7 +87,7 @@ aks_clusters = {
         mode                = "User"
         subnet_key          = "aks_nodepool_system"
         max_pods            = 30
-        vm_size             = "Standard_B2s"
+        vm_size             = "Standard_DS3_v2"
         node_count          = 1
         os_disk_type        = "Ephemeral"
         enable_auto_scaling = false
